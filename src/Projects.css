@@ -1,0 +1,90 @@
+/* --- PROJECTS SECTION STYLES --- */
+.projects-section {
+    padding: 100px 5%;
+    background-color: var(--background-color); /* Deep dark background */
+    text-align: center;
+}
+
+.projects-section .section-title {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 60px;
+}
+
+.projects-section .highlighted-text {
+    color: var(--primary-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+/* --- UPCOMING NOTICE STYLES --- */
+.upcoming-notice {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--card-background); /* Lighter dark background */
+    border: 2px solid var(--secondary-color); /* Secondary color border for visibility */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /* Neon glow effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+.upcoming-notice:hover {
+    transform: scale(1.03);
+    border-color: var(--primary-color);
+}
+
+.notice-text {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: var(--light-text-color);
+    line-height: 1.6;
+}
+
+.notice-text strong {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* --- INTERACTIVE ANIMATION --- */
+/* Simple Keyframes for a subtle, interactive bounce/pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    }
+    50% {
+        transform: scale(1.01);
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    }
+}
+
+.bounce-animation {
+    animation: pulse 3s infinite ease-in-out;
+}
+
+/* Responsive Adjustments (Optional, but good practice) */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 60px 3%;
+    }
+    .projects-section .section-title {
+        font-size: 2.5em;
+    }
+    .upcoming-notice {
+        padding: 20px;
+    }
+    .notice-text {
+        font-size: 1.1em;
+    }
+}

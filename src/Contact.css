@@ -1,0 +1,175 @@
+/* --- CONTACT SECTION STYLES --- */
+.contact-section {
+    padding: 100px 5%;
+    background-color: var(--background-color);
+    text-align: center;
+    min-height: 80vh; 
+}
+
+.contact-section .section-title {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 60px;
+}
+
+.contact-section .highlighted-text {
+    color: var(--primary-color);
+}
+
+/* --- SLIDING INTERACTION CARD (UNIQUE DESIGN) --- */
+.contact-card {
+    position: relative;
+    width: clamp(300px, 90%, 550px); /* Slightly wider card */
+    margin: 0 auto 50px auto;
+    background-color: var(--card-background);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Card Header */
+.card-header {
+    padding: 25px 30px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-status {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.card-cta {
+    font-size: 1em;
+    opacity: 0.9;
+}
+
+/* Form Container */
+.contact-form {
+    padding: 30px; /* Padding is always visible */
+    text-align: left;
+}
+
+/* --- MODERN UI FORM STYLING --- */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: var(--secondary-color); /* Bright label color */
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px; /* Larger padding for better touch targets */
+    border: 2px solid #3d3d5f; /* Subtle dark border */
+    border-radius: 10px; /* Softer rounded corners */
+    background-color: #10101f; /* Even darker input background */
+    color: var(--light-text-color);
+    font-size: 1em;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    resize: vertical;
+}
+
+/* Focus State: The key to modern UI interaction */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 15px rgba(122, 122, 255, 0.6); /* Vibrant glow on focus */
+    background-color: var(--background-color); /* Slight change on focus */
+}
+
+/* Placeholder text style */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #888;
+    opacity: 0.7;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0, 255, 255, 0.5);
+}
+
+.submit-btn svg {
+    stroke: var(--background-color);
+}
+
+/* --- SOCIAL LINKS (No Change) --- */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--light-text-color);
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border-color: var(--background-color);
+}
+
+/* ANIMATIONS (Reused) */
+/* (Ensure your keyframes for fadeInUp and slideInBottom are present in the final stylesheet) */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInBottom {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.slide-in-bottom {
+    animation: slideInBottom 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
