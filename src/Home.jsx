@@ -52,6 +52,7 @@ const Home = () => {
           <div class="backdrop-shape"></div>
         </div>
       </section>
+
     </>
 
   )

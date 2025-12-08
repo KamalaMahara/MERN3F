@@ -1,0 +1,136 @@
+/* --- Global & Container Setup --- */
+body {
+    font-family: 'Inter', sans-serif; /* Modern, clean font */
+    background-color: #0d1117; /* GitHub-style dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.product-card-container {
+    max-width: 340px;
+    width: 90%;
+}
+
+/* --- Card Main Structure --- */
+.course-card {
+    background-color: #161b22; /* Slightly lighter card surface */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    color: #e6edf3; /* Light text color */
+    border: 1px solid #30363d; /* Subtle border */
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* --- 1. Course Banner/Header --- */
+.course-banner {
+    background-color: #232832; /* Slightly different shade for header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.course-level {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #4CAF50; /* Green accent for 'Advanced' */
+    background-color: rgba(76, 175, 80, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.tech-icon {
+    /* Simple circle design for the MERN logo spot */
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-label {
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: #161b22;
+}
+
+
+/* --- 2. Main Content & Pricing --- */
+.course-content {
+    padding: 20px;
+}
+
+.course-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.course-description {
+    font-size: 0.95rem;
+    color: #a0a0a0;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* --- Course Metadata (Duration/Projects) --- */
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #30363d;
+}
+
+.meta-item {
+    font-size: 0.9rem;
+    color: #9E9E9E;
+}
+
+.meta-item i {
+    margin-right: 5px;
+}
+
+
+/* --- 3. Footer/Call-to-Action --- */
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #232832; /* Match the header color */
+}
+
+.course-price {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #3498db; /* Primary accent color for price */
+}
+
+.enroll-button {
+    text-decoration: none;
+    background-color: #3498db; /* Blue button */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+    background-color: #2980b9;
+}
