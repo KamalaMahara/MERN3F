@@ -5,6 +5,8 @@ import Contact from "./Contact"
 import Home from "./Home"
 import Test from "./Test"
 import Projects from "./Projects"
+import State from "./State"
+import UseEffectHook from "./UseEffectHook"
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/effect" element={< UseEffectHook />} />
+          <Route path="/state" element={< State />} />
           <Route path="/test" element={<Test />} />
           <Route path="/home" element={< Home />} />
           <Route path="/about" element={< About />} />
